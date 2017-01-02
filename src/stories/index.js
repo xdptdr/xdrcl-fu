@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
-import Button from './Button';
+import { Button } from 'xdrcl';
 import Welcome from './Welcome';
 
 storiesOf('Welcome', module)
@@ -10,8 +10,8 @@ storiesOf('Welcome', module)
 
 storiesOf('Button', module)
   .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
+    <Button onClick={action('clicked')}>XDRCL Button</Button>
   ))
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
+  .add('stock button', () => (
+    <button onClick={action('clicked')}>Stock Button</button>
   ));
